@@ -787,7 +787,10 @@ export default function App() {
   const [apiOnline,  setApiOnline]  = useState(false);
   const isMobile = useIsMobile();
 
-  useEffect(() => { checkHealth().then(setApiOnline); }, []);
+  useEffect(() => {
+  console.log("API URL:", import.meta.env.VITE_API_URL);
+  checkHealth().then(setApiOnline);
+}, []);
 
   const handleStart = (m) => { setMode(m); setScreen("form"); setError(""); };
 
