@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_URL || "https://eligicheck.onrender.com";
+const API_BASE = import.meta.env.VITE_API_URL || "https://api.eligicheck.in";
 const SUREPASS_TOKEN = import.meta.env.VITE_SUREPASS_TOKEN || "YOUR_SUREPASS_SANDBOX_TOKEN";
 
 const api = axios.create({ baseURL: API_BASE, timeout: 1200000 });
