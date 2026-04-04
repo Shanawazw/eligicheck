@@ -445,7 +445,7 @@ const HomeScreen = ({ onStart, apiOnline }) => {
       </div>
 
       <div style={{ fontSize: 12, color: apiOnline ? C.green : C.red }}>
-        {apiOnline ? "● API Connected"}
+        {apiOnline ? "● API Connected" : ""}
       </div>
     </div>
   );
